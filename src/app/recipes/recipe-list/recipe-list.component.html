@@ -1,0 +1,7 @@
+<button class="btn-primary" (click)="onNewRecipe()"
+    style="height: 35px; border-radius: 10px; background-color: #d3d3ba; color: black;position: relative; left:20px;">New
+    Recipe</button>
+
+<hr>
+
+<app-recipe-item *ngFor="let item of recipes; let i=index" [recipe]="item" [index]="i"></app-recipe-item>
